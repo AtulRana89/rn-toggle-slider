@@ -1,0 +1,26 @@
+{
+  "name": "rn-toggle-slider",
+  "version": "1.0.0",
+  "description": "A slider switch with a label inside",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtulRana89/rn-toggle-slider.git"
+  },
+  "keywords": [
+    "npm",
+    "rn-toggle-slider",
+    "slider",
+    "button",
+    "toggle-slider"
+  ],
+  "author": "Atul Rana <atulrana@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AtulRana89/rn-toggle-slider/issues"
+  },
+  "homepage": "https://github.com/AtulRana89/rn-toggle-slider#readme"
+}
