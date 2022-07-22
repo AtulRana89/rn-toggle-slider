@@ -16,6 +16,7 @@ class ToggleSwitch extends React.Component {
         this.state = {
             isActive: this.props.active || false
         };
+        this.vertical = this.props.vertical || false;
         this.borderWidth = this.props.borderWidth || 2;
         this.universalPadding = this.props.universalPadding || 2;
         this.viewPortRadius = this.props.radius + this.universalPadding;
@@ -78,10 +79,11 @@ class ToggleSwitch extends React.Component {
         const { isActive } = this.state;
 
         return (
-            <TouchableOpacity activeOpacity={1} disabled={disabled}>
+            <TouchableOpacity style={[this.vertical ? { height: this.viewPortWidth, } : {}]} activeOpacity={1} disabled={disabled}>
                 <View
                     style={[
                         styles.viewPort,
+                        this.vertical ? { transform: [{ rotate: "90deg", }], } : {},
                         {
                             width: this.viewPortWidth,
                             height: this.props.radius * 2 + this.universalPadding * 2,
@@ -90,7 +92,8 @@ class ToggleSwitch extends React.Component {
                             borderWidth: this.borderWidth,
                             borderColor: isActive ? activeBorder : inactiveBorder,
                             backgroundColor: isActive ? active : inactive,
-                        }
+
+                        },
                     ]}
                 >
                     <ScrollView
