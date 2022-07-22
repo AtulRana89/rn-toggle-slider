@@ -15,7 +15,7 @@ Some had the toggle behavior but the sliding behavior was missing, some had the 
 This library has been created to fill that gap.
 
 # Working demo  
-<img src="https://raw.githubusercontent.com/AtulRana89/rn-toggle-slider/master/assets/demo.webm" width="300" height="610"/>
+<img src="https://raw.githubusercontent.com/AtulRana89/rn-toggle-slider/master/assets/demo.gif" width="300" height="610"/>
 
 # Install
 ```bash
